@@ -1,7 +1,9 @@
 all : make
 
-make:
-	@if [ ! -f .env ]; then cp .env-example .env; fi
+setup-env:
+	@if [ ! -f ./srcs/.env ]; then cp ./srcs/.env-example ./srcs/.env; fi
+
+make: setup-env
 	docker compose -f ./srcs/docker-compose.yml up -d
 
 clean:
@@ -12,4 +14,4 @@ fclean: clean
 
 re : fclean all
 
-.PHONY: all re clean fclean
+.PHONY: all re clean fclean setup-env
