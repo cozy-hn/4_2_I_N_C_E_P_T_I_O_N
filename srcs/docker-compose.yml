@@ -61,16 +61,16 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      # device: /home/jiko/data/wp
-      device: /Users/jiko/data/wp
+      device: /home/jiko/data/wp
+      # device: /Users/jiko/data/wp
   db-vol:
     name: db-vol
     driver: local
     driver_opts:
       type: none
       o: bind
-      # device: /home/jiko/data/db
-      device: /Users/jiko/data/db
+      device: /home/jiko/data/db
+      # device: /Users/jiko/data/db
 networks:
   intra:
     name: intra
