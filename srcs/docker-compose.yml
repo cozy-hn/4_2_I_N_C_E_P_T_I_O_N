@@ -15,7 +15,7 @@ services:
     depends_on:
       - wordpress
     volumes:
-      - wp-vol:/var/www/html #엔진엑스에도 이게 필요한지 질문
+      - wp-vol:/var/www/html
     networks:
       - intra
     init: true
