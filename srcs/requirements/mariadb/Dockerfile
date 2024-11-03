@@ -7,5 +7,4 @@ RUN chmod +x /script.sh && \
     apt-get install mariadb-server -y && \
     apt-get install mariadb-client -y
 
-
 CMD ["/script.sh"]

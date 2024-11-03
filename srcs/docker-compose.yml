@@ -62,7 +62,6 @@ volumes:
       type: none
       o: bind
       device: /home/jiko/data/wp
-      # device: /Users/jiko/data/wp
   db-vol:
     name: db-vol
     driver: local
@@ -70,7 +69,6 @@ volumes:
       type: none
       o: bind
       device: /home/jiko/data/db
-      # device: /Users/jiko/data/db
 networks:
   intra:
     name: intra
